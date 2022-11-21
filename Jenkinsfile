@@ -9,6 +9,11 @@ pipeline {
         sh './gradlew clean check --no-daemon'
       }
     }
+    stage('Build 2') {
+      steps {
+        sh './gradlew clean check --no-daemon'
+      }
+    }
   }
   post {
     always {
