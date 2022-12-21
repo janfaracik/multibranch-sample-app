@@ -12,6 +12,7 @@ pipeline {
   }
   post {
     always {
+        testNG()
         junit(
           allowEmptyResults: true, 
           testResults: '**/build/test-results/test/*.xml'
