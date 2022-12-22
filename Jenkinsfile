@@ -9,6 +9,11 @@ pipeline {
         sh './gradlew clean check --no-daemon'
       }
     }
+    stage('Test') {
+      steps {
+        sh "mvn -Dmaven.test.failure.ignore=true clean package"
+      }
+    }
   }
   post {
     always {
