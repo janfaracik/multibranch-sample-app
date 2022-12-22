@@ -4,6 +4,11 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   stages {
+    stage('Hello world') {
+      steps {
+        echo 'Hello World'
+      }
+    }
     stage('Build') {
       steps {
         sh './gradlew clean check --no-daemon'
