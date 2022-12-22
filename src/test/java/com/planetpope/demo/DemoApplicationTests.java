@@ -17,4 +17,29 @@ class DemoApplicationTests {
 		assertFalse(true);
 	}
 
+	@Test
+	void testFailure2() {
+		assertFalse(true);
+	}
+
+	@Test
+	void testFailure3() {
+		assertFalse(true);
+	}
+
+	@Test
+	void testFailure4() {
+		assertFalse(true);
+	}
+
+	@Test
+	void testFailure5() {
+		assertFalse(true);
+	}
+
+	@Test
+	void testFailure6() {
+		assertFalse(true);
+	}
+
 }
