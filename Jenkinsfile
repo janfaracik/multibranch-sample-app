@@ -19,6 +19,7 @@ pipeline {
     always {
         junit(
           allowEmptyResults: true, 
+          skipPublishingChecks: true,
           testResults: '**/build/test-results/test/*.xml'
         )
     }
