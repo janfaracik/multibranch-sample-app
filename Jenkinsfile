@@ -15,7 +15,7 @@ pipeline {
         junit(
           allowEmptyResults: true, 
           skipPublishingChecks: true,
-          testResults: '**/build/test-results/test/*.xml'
+          testResults: '**/build/test-junit-xml/*.xml'
         )
     }
   }
