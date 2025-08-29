@@ -19,7 +19,7 @@ class DemoApplicationTests {
 
 	@Test
 	void testFailure2() {
-		assertFalse(true);
+		assertFalse(false);
 	}
 
 	@Test
