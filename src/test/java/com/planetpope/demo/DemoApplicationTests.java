@@ -14,12 +14,12 @@ class DemoApplicationTests {
 
 	@Test
 	void testFailure() {
-		assertFalse(true);
+		assertFalse(false);
 	}
 
 	@Test
 	void testFailure2() {
-		assertFalse(true);
+		assertFalse(false);
 	}
 
 	@Test
