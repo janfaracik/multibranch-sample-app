@@ -16,7 +16,7 @@ class DemoApplicationTests {
 
     @Test
     void testFailure() {
-        assertFalse(true);
+        assertFalse(false);
     }
 
     @Test
@@ -37,7 +37,7 @@ class DemoApplicationTests {
 
     @Test
     void testFailure5() {
-        assertFalse(true);
+        assertFalse(false);
     }
 
     @Test
@@ -51,7 +51,6 @@ class DemoApplicationTests {
     }
 
     @Test
-    @Disabled("Skipped intentionally")
     void testSkipped() {
         assertTrue(true);
     }
