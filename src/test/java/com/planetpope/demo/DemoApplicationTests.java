@@ -21,7 +21,7 @@ class DemoApplicationTests {
 
     @Test
     void testFailure2() {
-        assertFalse(true);
+        assertFalse(false);
     }
 
     @Test
@@ -32,7 +32,7 @@ class DemoApplicationTests {
 
     @Test
     void testFailure4() {
-        assertFalse(false);
+        assertFalse(true);
     }
 
     @Test
