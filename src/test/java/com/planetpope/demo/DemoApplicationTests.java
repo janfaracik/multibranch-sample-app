@@ -21,17 +21,18 @@ class DemoApplicationTests {
 
     @Test
     void testFailure2() {
-        assertFalse(false);
+        assertFalse(true);
     }
 
     @Test
+    @Disabled("Skipped intentionally")
     void testFailure3() {
         assertFalse(false);
     }
 
     @Test
     void testFailure4() {
-        assertFalse(true);
+        assertFalse(false);
     }
 
     @Test
