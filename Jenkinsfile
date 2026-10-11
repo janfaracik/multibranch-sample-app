@@ -4,6 +4,7 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Checkout: nothing to do'
+        sleep time: 10, unit: 'SECONDS'
       }
     }
     stage('Prepare') {
