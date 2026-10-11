@@ -33,7 +33,7 @@ pipeline {
     }
     stage('Unit Tests') {
       steps {
-        sh './gradlew clean check --no-daemon || true'
+        sh './gradlew clean check --continue --no-daemon || true'
       }
     }
     stage('Integration Tests') {
@@ -90,6 +90,11 @@ pipeline {
           allowEmptyResults: true, 
           skipPublishingChecks: true,
           testResults: '**/build/test-junit-xml/*.xml'
+        )
+        recordIssues(
+          enabledForFailure: true,
+          aggregatingResults: true,
+          tools: [java(), checkStyle(pattern: '**/build/reports/checkstyle/*.xml', reportEncoding: 'UTF-8')]
         )
     }
   }
